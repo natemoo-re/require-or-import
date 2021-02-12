@@ -1,6 +1,6 @@
 {
   "name": "require-or-import",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Dynamically `require` CommonJS or `import` ECMAScript modules with consistent behavior.",
   "scripts": {
     "test": "uvu"
@@ -30,8 +30,12 @@
     "native modules",
     "load"
   ],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natemoo-re/require-or-import.git"
+  },
+  "author": "Nate Moore <nate@natemoo.re>",
+  "license": "MIT",
   "dependencies": {
     "cjs-module-lexer": "^1.0.0"
   },
