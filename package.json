@@ -1,0 +1,45 @@
+{
+  "name": "require-or-import",
+  "version": "0.1.0",
+  "description": "Dynamically `require` CommonJS or `import` ECMAScript modules with consistent behavior.",
+  "scripts": {
+    "test": "uvu"
+  },
+  "main": "index.cjs",
+  "module": "index.mjs",
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "import": "./index.mjs"
+    },
+    "./test/cjs": "./test/cjs",
+    "./package.json": "./package.json"
+  },
+  "imports": {
+    "#fixtures/index.cjs": "./fixtures/index.cjs",
+    "#fixtures/named.cjs": "./fixtures/named.cjs",
+    "#fixtures/index.mjs": "./fixtures/index.mjs",
+    "#fixtures/cjs/*": "./fixtures/cjs/*",
+    "#fixtures/mjs/*": "./fixtures/mjs/*"
+  },
+  "keywords": [
+    "esm",
+    "cjs",
+    "require",
+    "import",
+    "native modules",
+    "load"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cjs-module-lexer": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.17.0",
+    "uvu": "^0.5.1"
+  },
+  "volta": {
+    "node": "12.20.2"
+  }
+}
